@@ -74,6 +74,12 @@
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">
 
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/subn" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -91,6 +97,12 @@
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">
 
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/subn" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -102,16 +114,22 @@
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="15sp"
                 android:layout_marginRight="15sp"
-                android:layout_marginBottom="50sp"
-                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                android:layout_marginTop="50sp"
                 app:cardBackgroundColor="#474235"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">
 
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/subn" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/rings"
+                android:id="@+id/Earrings"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_row="0"
@@ -119,12 +137,18 @@
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="15sp"
                 android:layout_marginRight="15sp"
-                android:layout_marginBottom="50sp"
-                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                android:layout_marginTop="50sp"
                 app:cardBackgroundColor="#474235"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">
 
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/subn" />
             </androidx.cardview.widget.CardView>
 
 
@@ -134,10 +158,13 @@
             android:id="@+id/footing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="Copyright of Foever Gems LLC."
+            android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="15sp"
-            android:padding="20sp"
-            android:text="Please select the type of jwelery that you want to get the price of yeyeyeye" />
+            android:textSize="15sp" />
 
 
     </LinearLayout>
