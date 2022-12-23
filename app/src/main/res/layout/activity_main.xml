@@ -58,7 +58,6 @@
             android:rowCount="2">
 
 
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/Ring"
                 android:layout_width="0dp"
@@ -67,9 +66,9 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="15sp"
+                android:layout_marginTop="50sp"
                 android:layout_marginRight="15sp"
                 android:layout_marginBottom="25sp"
-                android:layout_marginTop="50sp"
                 app:cardBackgroundColor="#474235"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">
@@ -90,9 +89,9 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="15sp"
+                android:layout_marginTop="50sp"
                 android:layout_marginRight="15sp"
                 android:layout_marginBottom="25sp"
-                android:layout_marginTop="50sp"
                 app:cardBackgroundColor="#474235"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">
@@ -113,9 +112,9 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="15sp"
+                android:layout_marginTop="50sp"
                 android:layout_marginRight="15sp"
                 android:layout_marginBottom="25sp"
-                android:layout_marginTop="50sp"
                 app:cardBackgroundColor="#474235"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">
@@ -136,9 +135,9 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="15sp"
+                android:layout_marginTop="50sp"
                 android:layout_marginRight="15sp"
                 android:layout_marginBottom="25sp"
-                android:layout_marginTop="50sp"
                 app:cardBackgroundColor="#474235"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">
