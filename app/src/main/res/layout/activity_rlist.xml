@@ -8,8 +8,18 @@
     tools:context=".Rlist"
     android:orientation="horizontal">
 
-    <ListView
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/list_view"/>
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="Category" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
