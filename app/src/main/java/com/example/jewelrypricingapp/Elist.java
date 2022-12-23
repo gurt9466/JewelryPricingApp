@@ -1,5 +1,9 @@
 package com.example.jewelrypricingapp;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,14 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class Rlist  extends AppCompatActivity {
+public class Elist extends AppCompatActivity {
 
     ListView listView;
-    String[] mTitle = {"No Stone Ring", "Diamond Ring", "Gem Stone Ring"};
+    String[] mTitle = {"No Stone Earrings", "Diamond Earrings", "Gem Stone Earrings"};
     int[] images = {R.drawable.subn, R.drawable.subn, R.drawable.subn};
 
     @Override
@@ -27,18 +28,18 @@ public class Rlist  extends AppCompatActivity {
 
         listView = findViewById(R.id.list_view);
 
-        MyAdapter adapter = new MyAdapter(this, mTitle, images);
+        Elist.MyAdapter adapter = new Elist.MyAdapter(this, mTitle, images);
         listView.setAdapter(adapter);
 
-           listView.setOnItemClickListener((parent, view, position, id) -> {
-               if(position==0){
-                   startActivity(new Intent(Rlist.this,NoStoneRing.class));
-               }else if(position==1){
-                   startActivity(new Intent(Rlist.this,DiamondRing.class));
-               }else if(position==2){
-                   startActivity(new Intent(Rlist.this,GemStoneRing.class));
-               }
-           });
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            if(position==0){
+                startActivity(new Intent(Elist.this,NoStoneEarrings.class));
+            }else if(position==1){
+                startActivity(new Intent(Elist.this,DiamondEarrings.class));
+            }else if(position==2){
+                startActivity(new Intent(Elist.this,GemStoneEarrings.class));
+            }
+        });
     }
 
     class MyAdapter extends ArrayAdapter<String> {
