@@ -17,8 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Rlist  extends AppCompatActivity {
 
     ListView listView;
-    String[] mTitle = {"No Stone Ring", "Diamond Ring", "Gem Stone Ring"};
-    int[] images = {R.drawable.subn, R.drawable.subn, R.drawable.subn};
+    String[] mTitle = {"No Stone Ring", "Diamond Ring", "Gemstone Ring"};
+    int[] images = {R.drawable.subn, R.drawable.diamond2, R.drawable.gemstone};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

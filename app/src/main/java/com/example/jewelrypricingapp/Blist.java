@@ -18,13 +18,13 @@ import android.widget.TextView;
 public class Blist extends AppCompatActivity {
 
     ListView listView;
-    String[] mTitle = {"No Stone Bracelet", "Diamond Bracelet", "Gem Stone Bracelet"};
-    int[] images = {R.drawable.subn, R.drawable.subn, R.drawable.subn};
+    String[] mTitle = {"No Stone Bracelet", "Diamond Bracelet", "Gemstone Bracelet"};
+    int[] images = {R.drawable.subn, R.drawable.diamond2, R.drawable.gemstone};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rlist);
+        setContentView(R.layout.activity_blist);
 
         listView = findViewById(R.id.list_view);
 

@@ -18,13 +18,13 @@ import android.widget.TextView;
 public class Elist extends AppCompatActivity {
 
     ListView listView;
-    String[] mTitle = {"No Stone Earrings", "Diamond Earrings", "Gem Stone Earrings"};
-    int[] images = {R.drawable.subn, R.drawable.subn, R.drawable.subn};
+    String[] mTitle = {"No Stone Earrings", "Diamond Earrings", "Gemstone Earrings"};
+    int[] images = {R.drawable.subn, R.drawable.diamond2, R.drawable.gemstone};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rlist);
+        setContentView(R.layout.activity_elist);
 
         listView = findViewById(R.id.list_view);
 

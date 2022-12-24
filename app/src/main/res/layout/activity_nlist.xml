@@ -10,13 +10,15 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Nheader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:textColor="#F1D166"
         android:gravity="center"
         android:padding="10sp"
-        android:text="Category" />
+        android:text="Necklace"
+        android:textSize="30dp"/>
 
     <ListView
         android:id="@+id/list_view"
