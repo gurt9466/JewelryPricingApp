@@ -18,7 +18,7 @@ public class Rlist  extends AppCompatActivity {
 
     ListView listView;
     String[] mTitle = {"No Stone Ring", "Diamond Ring", "Gemstone Ring"};
-    int[] images = {R.drawable.nostonering, R.drawable.diamond2, R.drawable.gemstone};
+    int[] images = {R.drawable.nostonering, R.drawable.diamondring, R.drawable.gemstonering};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
