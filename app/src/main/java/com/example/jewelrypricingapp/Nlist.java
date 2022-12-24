@@ -19,7 +19,7 @@ public class Nlist extends AppCompatActivity {
 
     ListView listView;
     String[] mTitle = {"No Stone Necklace", "Diamond Necklace", "Gemstone Necklace"};
-    int[] images = {R.drawable.subn, R.drawable.diamond2, R.drawable.gemstone};
+    int[] images = {R.drawable.nostoneneck, R.drawable.diamond2, R.drawable.gemstone};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -19,7 +19,7 @@ public class Elist extends AppCompatActivity {
 
     ListView listView;
     String[] mTitle = {"No Stone Earrings", "Diamond Earrings", "Gemstone Earrings"};
-    int[] images = {R.drawable.subn, R.drawable.diamond2, R.drawable.gemstone};
+    int[] images = {R.drawable.nostoneear, R.drawable.diamond2, R.drawable.gemstone};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

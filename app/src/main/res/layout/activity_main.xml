@@ -23,7 +23,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="cursive"
             android:paddingLeft="100dp"
-            android:text="Forever Gems1"
+            android:text="Forever Gems"
             android:textColor="#F1D166"
             android:textSize="45sp"
             android:textStyle="bold"
@@ -189,7 +189,7 @@
             android:fontFamily="monospace"
             android:gravity="center"
             android:padding="0sp"
-            android:text="Necklace        Earring"
+            android:text="Necklace       Earrings"
             android:textAllCaps="true"
             android:textColor="#F1D166"
             android:textSize="20sp" />

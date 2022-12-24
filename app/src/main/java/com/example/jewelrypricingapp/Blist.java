@@ -19,7 +19,7 @@ public class Blist extends AppCompatActivity {
 
     ListView listView;
     String[] mTitle = {"No Stone Bracelet", "Diamond Bracelet", "Gemstone Bracelet"};
-    int[] images = {R.drawable.subn, R.drawable.diamond2, R.drawable.gemstone};
+    int[] images = {R.drawable.nostonebracelet, R.drawable.diamond2, R.drawable.gemstone};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
