@@ -16,6 +16,7 @@ CardView Ring, Bracelet, Neckalce, Earrings;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Ring = findViewById(R.id.Ring);
         Bracelet = findViewById(R.id.Bracelet);
         Neckalce = findViewById(R.id.Necklace);
