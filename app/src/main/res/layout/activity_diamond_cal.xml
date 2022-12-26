@@ -34,7 +34,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:hint=" 00"
+        android:hint=" Per Gram"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textSize="20sp"
