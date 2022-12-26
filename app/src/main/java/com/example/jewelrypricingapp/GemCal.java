@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class DiamontBracelet extends AppCompatActivity {
+public class GemCal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diamont_bracelet);
+        setContentView(R.layout.activity_gem_cal);
     }
 }

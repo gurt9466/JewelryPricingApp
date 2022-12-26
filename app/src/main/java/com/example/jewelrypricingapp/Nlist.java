@@ -33,11 +33,11 @@ public class Nlist extends AppCompatActivity {
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
             if(position==0){
-                startActivity(new Intent(Nlist.this,NoStoneNecklace.class));
+                startActivity(new Intent(Nlist.this,NoGemCal.class));
             }else if(position==1){
-                startActivity(new Intent(Nlist.this,DiamondNecklace.class));
+                startActivity(new Intent(Nlist.this,DiamondCal.class));
             }else if(position==2){
-                startActivity(new Intent(Nlist.this,GemStoneNecklace.class));
+                startActivity(new Intent(Nlist.this,GemCal.class));
             }
         });
     }

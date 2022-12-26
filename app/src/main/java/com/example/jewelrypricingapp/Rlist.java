@@ -32,11 +32,11 @@ public class Rlist  extends AppCompatActivity {
 
            listView.setOnItemClickListener((parent, view, position, id) -> {
                if(position==0){
-                   startActivity(new Intent(Rlist.this,NoStoneRing.class));
+                   startActivity(new Intent(Rlist.this,NoGemCal.class));
                }else if(position==1){
-                   startActivity(new Intent(Rlist.this,DiamondRing.class));
+                   startActivity(new Intent(Rlist.this,DiamondCal.class));
                }else if(position==2){
-                   startActivity(new Intent(Rlist.this,GemStoneRing.class));
+                   startActivity(new Intent(Rlist.this,GemCal.class));
                }
            });
     }

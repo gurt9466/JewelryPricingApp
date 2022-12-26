@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class NoStoneRing extends AppCompatActivity {
+public class NoGemCal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_no_stone_ring);
+        setContentView(R.layout.activity_no_gem_cal);
     }
 }

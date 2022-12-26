@@ -14,7 +14,13 @@
         android:theme="@style/Theme.JewelryPricingApp"
         tools:targetApi="31">
         <activity
-            android:name=".material"
+            android:name=".GemCal"
+            android:exported="false" />
+        <activity
+            android:name=".DiamondCal"
+            android:exported="false" />
+        <activity
+            android:name=".NoGemCal"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
@@ -29,33 +35,6 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".GemStoneEarrings"
-            android:exported="false" />
-        <activity
-            android:name=".DiamondEarrings"
-            android:exported="false" />
-        <activity
-            android:name=".NoStoneEarrings"
-            android:exported="false" />
-        <activity
-            android:name=".GemStoneNecklace"
-            android:exported="false" />
-        <activity
-            android:name=".DiamondNecklace"
-            android:exported="false" />
-        <activity
-            android:name=".NoStoneNecklace"
-            android:exported="false" />
-        <activity
-            android:name=".GemstoneBracelet"
-            android:exported="false" />
-        <activity
-            android:name=".DiamontBracelet"
-            android:exported="false" />
-        <activity
-            android:name=".NoStoneBracelet"
-            android:exported="false" />
-        <activity
             android:name=".Elist"
             android:exported="false" />
         <activity
@@ -63,15 +42,6 @@
             android:exported="false" />
         <activity
             android:name=".Blist"
-            android:exported="false" />
-        <activity
-            android:name=".GemStoneRing"
-            android:exported="false" />
-        <activity
-            android:name=".DiamondRing"
-            android:exported="false" />
-        <activity
-            android:name=".NoStoneRing"
             android:exported="false" />
         <activity
             android:name=".Rlist"

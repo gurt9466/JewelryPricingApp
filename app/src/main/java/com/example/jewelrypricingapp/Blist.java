@@ -33,11 +33,11 @@ public class Blist extends AppCompatActivity {
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
             if(position==0){
-                startActivity(new Intent(Blist.this,NoStoneBracelet.class));
+                startActivity(new Intent(Blist.this,NoGemCal.class));
             }else if(position==1){
-                startActivity(new Intent(Blist.this,DiamontBracelet.class));
+                startActivity(new Intent(Blist.this,DiamondCal.class));
             }else if(position==2){
-                startActivity(new Intent(Blist.this,GemstoneBracelet.class));
+                startActivity(new Intent(Blist.this,GemCal.class));
             }
         });
     }

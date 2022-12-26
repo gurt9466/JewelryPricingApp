@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class GemStoneEarrings extends AppCompatActivity {
+public class DiamondCal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gem_stone_earrings);
+        setContentView(R.layout.activity_diamond_cal);
     }
 }
