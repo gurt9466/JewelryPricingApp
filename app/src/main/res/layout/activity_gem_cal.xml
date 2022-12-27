@@ -12,6 +12,7 @@
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -23,14 +24,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/caratg"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/caratg" />
 
     <EditText
         android:id="@+id/Enterpriceg"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -42,14 +43,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Entermaterialg"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/Entermaterialg" />
 
     <EditText
         android:id="@+id/Enterweightg"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -61,14 +62,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/purityg"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/purityg" />
 
     <EditText
         android:id="@+id/Enterhoursg"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -80,14 +81,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Enterweightg"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/Enterweightg" />
 
     <EditText
         android:id="@+id/Enteroverheadg"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -99,14 +100,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/laborhoursg"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/laborhoursg" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#F1D166"
         android:fontFamily="sans-serif-medium"
         android:text="@string/calculate"
@@ -197,17 +197,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
-        android:id="@+id/Gemstone"
+        android:id="@+id/gemhead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:background="#000000"
         android:fontFamily="cursive"
         android:text="Gemstone"
         android:textColor="#F1D166"
         android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -283,7 +282,7 @@
         android:id="@+id/textView"
         android:layout_width="160dp"
         android:layout_height="48dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="20dp"
         android:background="#000000"
         android:fontFamily="sans-serif-light"
         android:gravity="center|left"
@@ -293,18 +292,52 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
         android:id="@+id/caratg"
         android:layout_width="160dp"
         android:layout_height="48dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:hint=" 00"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gemtypeg" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:background="#000000"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center|left"
+        android:text="Enter Gem Type:"
+        android:textColor="#F1D166"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/gemtypeg"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:hint="Gem Type"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textSize="20sp"
