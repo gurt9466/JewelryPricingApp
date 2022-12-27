@@ -12,6 +12,7 @@
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -23,14 +24,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/caratd"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/caratpriced" />
 
     <EditText
         android:id="@+id/Enterpriced"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -42,14 +43,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Entermateriald"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/Entermateriald" />
 
     <EditText
         android:id="@+id/Enterweightd"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -61,14 +62,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/purityd"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/purityd" />
 
     <EditText
         android:id="@+id/Enterhoursd"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -80,14 +81,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Enterweightd"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/Enterweightd" />
 
     <EditText
         android:id="@+id/Enteroverheadd"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -99,14 +100,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/laborhoursd"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/laborhoursd" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#F1D166"
         android:fontFamily="sans-serif-medium"
         android:text="@string/calculate"
@@ -130,7 +130,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView3"
@@ -312,5 +312,39 @@
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center|left"
+        android:text="Enter Carat Price Today:"
+        android:textColor="#F1D166"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/caratpriced"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:hint=" 00"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caratd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
