@@ -9,8 +9,8 @@ import android.widget.EditText;
 
 public class GemCal extends AppCompatActivity implements View.OnClickListener{
 
-    EditText Entermaterialg, Enterpriceg, purityg, Enterweightg, Enterhoursg, laborhoursg, Enteroverheadg, caratg;
-    String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead,strcarat, resultMessage;
+    EditText Entermaterialg, Enterpriceg, purityg, Enterweightg, Enterhoursg, laborhoursg, Enteroverheadg, caratg, gemtypeg;
+    String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead,strcarat, resultMessage, strgemtypeg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class GemCal extends AppCompatActivity implements View.OnClickListener{
     public void ComputeResult()
 
     {
+        gemtypeg = (EditText) findViewById(R.id.gemtypeg);
         Entermaterialg = findViewById(R.id.Entermaterialg);
         caratg = findViewById(R.id.caratg);
         Enterpriceg = findViewById(R.id.Enterpriceg);
@@ -40,10 +41,11 @@ public class GemCal extends AppCompatActivity implements View.OnClickListener{
         laborhoursg = findViewById(R.id.laborhoursg);
         Enteroverheadg = findViewById(R.id.Enteroverheadg);
 
-        if (Entermaterialg.getText().toString().isEmpty() || Enterpriceg.getText().toString().isEmpty() || caratg.getText().toString().isEmpty() ||
+        if (Entermaterialg.getText().toString().isEmpty() || gemtypeg.getText().toString().isEmpty()|| Enterpriceg.getText().toString().isEmpty() || caratg.getText().toString().isEmpty() ||
                 purityg.getText().toString().isEmpty() || Enterweightg.getText().toString().isEmpty() ||
                 Enterhoursg.getText().toString().isEmpty() || laborhoursg.getText().toString().isEmpty() || Enteroverheadg.getText().toString().isEmpty()) {
 
+            strgemtypeg = "0";
             strmaterial = "0";
             strprice = "0";
             strpurity = "0";
@@ -54,6 +56,7 @@ public class GemCal extends AppCompatActivity implements View.OnClickListener{
             stroverhead = "0";
 
         } else {
+            strgemtypeg = gemtypeg.getText().toString();
             strmaterial = Entermaterialg.getText().toString();
             strprice = Enterpriceg.getText().toString();
             strpurity = purityg.getText().toString();

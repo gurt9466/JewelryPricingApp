@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class NoGemCal extends AppCompatActivity implements View.OnClickListener {
-    EditText Entermaterial1, Enterprice1, purity, Enterweight1, Enterhours1, laborhours, Enteroverhead1;
+    EditText Entermaterial1, Enterprice1, purity, Enterweight1, Enterhours1, laborhours, Enteroverhead1 ;
     String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead, resultMessage;
 
     @Override
@@ -28,6 +28,7 @@ public class NoGemCal extends AppCompatActivity implements View.OnClickListener 
     }
 
     public void ComputeResult() {
+
         Entermaterial1 = (EditText) findViewById(R.id.Entermaterial1);
         Enterprice1 = (EditText) findViewById(R.id.Enterprice1);
         purity = (EditText) findViewById(R.id.purity);
@@ -40,6 +41,7 @@ public class NoGemCal extends AppCompatActivity implements View.OnClickListener 
                 purity.getText().toString().isEmpty() || Enterweight1.getText().toString().isEmpty() ||
                 Enterhours1.getText().toString().isEmpty() || laborhours.getText().toString().isEmpty() || Enteroverhead1.getText().toString().isEmpty()) {
 
+
             strmaterial = "0";
             strprice = "0";
             strpurity = "0";
@@ -49,6 +51,7 @@ public class NoGemCal extends AppCompatActivity implements View.OnClickListener 
             stroverhead = "0";
 
         } else {
+
             strmaterial = Entermaterial1.getText().toString();
             strprice = Enterprice1.getText().toString();
             strpurity = purity.getText().toString();
@@ -57,7 +60,7 @@ public class NoGemCal extends AppCompatActivity implements View.OnClickListener 
             strlaorhours = laborhours.getText().toString();
             stroverhead = Enteroverhead1.getText().toString();
         }
-        double material = Double.parseDouble(strmaterial);
+
         double matprice = Double.parseDouble(strprice);
         double matpurity = Double.parseDouble(strpurity);
         double matweight = Double.parseDouble(strweight);
@@ -65,8 +68,26 @@ public class NoGemCal extends AppCompatActivity implements View.OnClickListener 
         double lhours = Double.parseDouble(strlaorhours);
         double overhead = Double.parseDouble(stroverhead);
 
-        double result = material+matprice+matpurity+matweight+lcost+lhours+overhead;
-        resultMessage = "Your Final Grade is :" +result;
+        double tmrate = ((matprice*(matpurity/100)*matweight));
+        double ltr = lhours*lcost;
+        double or = ((tmrate + ltr)*(overhead/100));
+        double ic = (tmrate+ltr+or);
+        double wholesalep = ic*2;
+        double retail = wholesalep*2.5;
+
+
+
+        resultMessage ="\n\n\n"+"Category : No Stone"+"\n"+"-------------------------------------------------------------"+
+                "\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
+                matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
+                +"-------------------------------------------------------------"+"\n"+
+                "Total Labor Rate :" + ltr +"\n" +
+                ""+"Overhead Rate :"+ or+"%"+"\n"+
+                "-------------------------------------------------------------"+"\n"+
+                "Initial Cost :"+ic+"\n\n\n\n"+"-------------------------------------------------------------"+"\n"+
+                "Wholesale Price :"+ wholesalep+"\n"+"-------------------------------------------------------------"+"\n"+"\n\n\n\n"+
+                "-------------------------------------------------------------"+"\n"+
+                "Retail Price :"+ retail+"\n"+"-------------------------------------------------------------"+"\n";
 
     // Create Bundle instance, this will allow transfer of data from Activity to DialogFragment
     Bundle args = new Bundle();

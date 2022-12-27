@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">JewelryPricingApp</string>
-    <string name="txt_compute_result">Showing Result(s)</string>
-    <string name="txt_close">Close</string>
+    <string name="txt_compute_result">Approximate Price :</string>
+    <string name="txt_close">return</string>
     <string name="gold_silver">Gold/Silver</string>
     <string name="per_gram">Per Gram</string>
     <string name="grams">Grams</string>
