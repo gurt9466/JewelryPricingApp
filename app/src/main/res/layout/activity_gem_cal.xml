@@ -156,7 +156,7 @@
         android:background="#000000"
         android:fontFamily="sans-serif-light"
         android:gravity="center|left"
-        android:text="@string/enter_purity"
+        android:text="@string/enter_weight"
         android:textColor="#F1D166"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
