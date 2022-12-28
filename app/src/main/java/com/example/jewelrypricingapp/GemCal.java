@@ -88,7 +88,7 @@ public class GemCal extends AppCompatActivity implements View.OnClickListener{
         double result = retail;
 
         resultMessage ="\n\n\n"+"Category : Gemstone"+"\n"+"-------------------------------------------------------------"+
-                "\n\n\n"+"Gem Type : "+strgemtypeg+"\n"+"GemStone Carat: "+dcarat+"\n"+"Gemstone Price Today :"+strcaratpriceg+"\n"+"-------------------------------------------------------------"+"\n"+"Total Gemstone Price :"+carattotal+"\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
+                "\n\n\n"+"Gem Type : "+strgemtypeg+"\n"+"Gemstone Carat: "+dcarat+"\n"+"Gemstone Price Today :"+strcaratpriceg+"\n"+"-------------------------------------------------------------"+"\n"+"Total Gemstone Price :"+carattotal+"\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
                 matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
                 +"-------------------------------------------------------------"+"\n"+
                 "Total Labor Rate :" + ltr +"\n" +

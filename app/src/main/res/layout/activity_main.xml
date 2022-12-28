@@ -23,7 +23,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="cursive"
             android:paddingLeft="100dp"
-            android:text="Forever Gems"
+            android:text="@string/forever_gems"
             android:textColor="#F1D166"
             android:textSize="45sp"
             android:textStyle="bold"
@@ -39,7 +39,7 @@
             android:fontFamily="sans-serif-light"
             android:gravity="center"
             android:padding="2sp"
-            android:text="Please select the type of jewelry that you want to get the price"
+            android:text="@string/select"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -117,7 +117,7 @@
             android:fontFamily="monospace"
             android:gravity="center"
             android:padding="0sp"
-            android:text="  Ring         Bracelet"
+            android:text="@string/main_ring_bracelet"
             android:textAllCaps="true"
             android:textColor="#F1D166"
             android:textSize="20sp" />
@@ -189,7 +189,7 @@
             android:fontFamily="monospace"
             android:gravity="center"
             android:padding="0sp"
-            android:text="Necklace       Earrings"
+            android:text="@string/main_neck_ear"
             android:textAllCaps="true"
             android:textColor="#F1D166"
             android:textSize="20sp" />
@@ -204,7 +204,7 @@
             android:fontFamily="serif-monospace"
             android:gravity="center"
             android:paddingTop="20dp"
-            android:text="Copyright of Forever Gems LLC."
+            android:text="@string/copyright"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="10sp"

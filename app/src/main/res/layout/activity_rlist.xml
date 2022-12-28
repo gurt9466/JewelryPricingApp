@@ -16,7 +16,7 @@
         android:fontFamily="cursive"
         android:gravity="center"
         android:padding="10sp"
-        android:text="Ring"
+        android:text="@string/ring"
         android:textColor="#F1D166"
         android:textSize="45dp"
         android:textStyle="bold" />
