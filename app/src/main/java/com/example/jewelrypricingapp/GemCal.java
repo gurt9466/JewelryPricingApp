@@ -70,7 +70,6 @@ public class GemCal extends AppCompatActivity implements View.OnClickListener{
             stroverhead = Enteroverheadg.getText().toString();
         }
         double caratprice = Double.parseDouble(strcaratpriceg);
-        double material = Double.parseDouble(strmaterial);
         double matprice = Double.parseDouble(strprice);
         double matpurity = Double.parseDouble(strpurity);
         double matweight = Double.parseDouble(strweight);
