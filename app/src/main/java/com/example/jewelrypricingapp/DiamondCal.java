@@ -9,8 +9,8 @@ import android.widget.EditText;
 
 public class DiamondCal extends AppCompatActivity implements View.OnClickListener{
 
-    EditText Entermateriald, Enterpriced, purityd, Enterweightd, Enterhoursd, laborhoursd, Enteroverheadd, caratd;
-    String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead,strcarat, resultMessage;
+    EditText Entermateriald, Enterpriced, purityd, Enterweightd, Enterhoursd, laborhoursd, Enteroverheadd, caratd, caratpriced;
+    String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead,strcarat, resultMessage, strcaratpriced;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class DiamondCal extends AppCompatActivity implements View.OnClickListene
     public void ComputeResult()
 
     {
+        caratpriced = findViewById(R.id.caratpriced);
         Entermateriald = findViewById(R.id.Entermateriald);
         caratd = findViewById(R.id.caratd);
         Enterpriced = findViewById(R.id.Enterpriced);
@@ -40,10 +41,11 @@ public class DiamondCal extends AppCompatActivity implements View.OnClickListene
         laborhoursd = findViewById(R.id.laborhoursd);
         Enteroverheadd = findViewById(R.id.Enteroverheadd);
 
-        if (Entermateriald.getText().toString().isEmpty() || Enterpriced.getText().toString().isEmpty() || caratd.getText().toString().isEmpty() ||
+        if (Entermateriald.getText().toString().isEmpty() || Enterpriced.getText().toString().isEmpty()|| caratpriced.getText().toString().isEmpty()  || caratd.getText().toString().isEmpty() ||
                 purityd.getText().toString().isEmpty() || Enterweightd.getText().toString().isEmpty() ||
                 Enterhoursd.getText().toString().isEmpty() || laborhoursd.getText().toString().isEmpty() || Enteroverheadd.getText().toString().isEmpty()) {
 
+            strcaratpriced = "0";
             strmaterial = "0";
             strprice = "0";
             strpurity = "0";
@@ -54,6 +56,7 @@ public class DiamondCal extends AppCompatActivity implements View.OnClickListene
             stroverhead = "0";
 
         } else {
+            strcaratpriced = caratpriced.getText().toString();
             strmaterial = Entermateriald.getText().toString();
             strprice = Enterpriced.getText().toString();
             strpurity = purityd.getText().toString();
@@ -63,7 +66,8 @@ public class DiamondCal extends AppCompatActivity implements View.OnClickListene
             strlaorhours = laborhoursd.getText().toString();
             stroverhead = Enteroverheadd.getText().toString();
         }
-        double material = Double.parseDouble(strmaterial);
+
+        double dpcarat = Double.parseDouble(strcaratpriced);
         double matprice = Double.parseDouble(strprice);
         double matpurity = Double.parseDouble(strpurity);
         double matweight = Double.parseDouble(strweight);
@@ -72,8 +76,26 @@ public class DiamondCal extends AppCompatActivity implements View.OnClickListene
         double lhours = Double.parseDouble(strlaorhours);
         double overhead = Double.parseDouble(stroverhead);
 
-        double result = material+matprice+matpurity+matweight+lcost+lhours+overhead+dcarat;
-        resultMessage = "Your Final Grade is :" +result;
+        double carattotal = dpcarat*dcarat;
+        double tmrate = ((matprice*(matpurity/100)*matweight));
+        double ltr = lhours*lcost;
+        double or = ((tmrate + ltr+carattotal)*(overhead/100));
+        double ic = (tmrate+ltr+or+carattotal);
+        double wholesalep = ic*2;
+        double retail = wholesalep*2.5;
+        double result = retail;
+
+        resultMessage ="\n\n\n"+"Category : Diamond"+"\n"+"-------------------------------------------------------------"+
+                "\n\n\n"+"Diamond Carat: "+dcarat+"\n"+"Diamond Price Today :"+strcaratpriced+"\n"+"-------------------------------------------------------------"+"\n"+"Total Diamond Price :"+carattotal+"\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
+                matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
+                +"-------------------------------------------------------------"+"\n"+
+                "Total Labor Rate :" + ltr +"\n" +
+                ""+"Overhead Rate :"+ or+"\n"+
+                "-------------------------------------------------------------"+"\n"+
+                "Initial Cost :"+ic+"\n\n\n\n"+"-------------------------------------------------------------"+"\n"+
+                "Wholesale Price :"+ wholesalep+"\n"+"-------------------------------------------------------------"+"\n"+"\n\n\n\n"+
+                "-------------------------------------------------------------"+"\n"+
+                "Retail Price :"+ result+"\n"+"-------------------------------------------------------------"+"\n";
 
         // Create Bundle instance, this will allow transfer of data from Activity to DialogFragment
         Bundle args = new Bundle();
