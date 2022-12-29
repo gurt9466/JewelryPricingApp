@@ -17,7 +17,7 @@
         android:textColor="#F1D166"
         android:gravity="center"
         android:padding="10sp"
-        android:text="Bracelet"
+        android:text="@string/bracelet"
         android:textSize="45dp"
         android:textStyle="bold"/>
 

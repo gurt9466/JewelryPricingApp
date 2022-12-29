@@ -5,8 +5,35 @@
     <string name="gold_silver">Gold/Silver</string>
     <string name="per_gram">Per Gram</string>
     <string name="grams">Grams</string>
+    <string name="hours">Hours</string>
     <string name="amount">Amount</string>
     <string name="_10">10%</string>
+    <string name="_100_1">100 to 1%</string>
+    <string name="carat_0">0.00</string>
+    <string name="carat_00">0000</string>
+    <string name="gem_type">Gem Type</string>
     <string name="calculate">Calculate</string>
     <string name="enter_material">Enter Material:</string>
+    <string name="enter_price">Enter Material Price:</string>
+    <string name="enter_purity">Enter Material Purity:</string>
+    <string name="enter_weight">Enter Weight:</string>
+    <string name="enter_labor_cost">Enter Labor Cost:</string>
+    <string name="enter_labor_hours">Enter Labor Hours:</string>
+    <string name="enter_overhead">Enter Overhead:</string>
+    <string name="enter_carat">Enter Carat:</string>
+    <string name="enter_carat_price">Enter Carat Price Today:</string>
+    <string name="enter_gem_type">Enter Gem Type:</string>
+    <string name="no_stone">No Stone</string>
+    <string name="diamond">Diamond</string>
+    <string name="gemstone">Gemstone</string>
+    <string name="ring">Ring</string>
+    <string name="bracelet">Bracelet</string>
+    <string name="necklace">Necklace</string>
+    <string name="earrings">Earrings</string>
+    <string name="forever_gems">Forever Gems</string>
+    <string name="select">Please select the type of jewelry that you want to get the price </string>
+    <string name="main_ring_bracelet">   Ring          Bracelet </string>
+    <string name="main_neck_ear">Necklace       Earrings </string>
+    <string name="copyright">Copyright of Forever Gems LLC.</string>
+
 </resources>
