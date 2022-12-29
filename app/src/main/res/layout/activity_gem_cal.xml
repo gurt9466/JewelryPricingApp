@@ -112,7 +112,7 @@
         android:text="@string/calculate"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.796"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Enteroverheadg" />
 
@@ -205,11 +205,11 @@
         android:fontFamily="cursive"
         android:text="Gemstone"
         android:textColor="#F1D166"
-        android:textSize="45sp"
+        android:textSize="55sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="160dp"
@@ -269,7 +269,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:hint=" 00"
+        android:hint="100% to 1%"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textSize="20sp"
@@ -316,7 +316,7 @@
         android:id="@+id/textView10"
         android:layout_width="160dp"
         android:layout_height="48dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="80dp"
         android:background="#000000"
         android:fontFamily="sans-serif-light"
         android:gravity="center|left"
@@ -332,7 +332,7 @@
         android:id="@+id/gemtypeg"
         android:layout_width="160dp"
         android:layout_height="48dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -379,5 +379,17 @@
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/caratg" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="81dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/gemtable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
