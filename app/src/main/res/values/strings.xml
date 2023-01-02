@@ -32,8 +32,6 @@
     <string name="earrings">Earrings</string>
     <string name="forever_gems">Forever Gems</string>
     <string name="select">Please select the type of jewelry that you want to get the price </string>
-    <string name="main_ring_bracelet">   Ring          Bracelet </string>
-    <string name="main_neck_ear">Necklace       Earrings </string>
     <string name="copyright">Copyright of Forever Gems LLC.</string>
 
 </resources>
