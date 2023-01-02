@@ -2,24 +2,36 @@ package com.example.jewelrypricingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class DiamondCal extends AppCompatActivity implements View.OnClickListener{
 
     EditText Entermateriald, Enterpriced, purityd, Enterweightd, Enterhoursd, laborhoursd, Enteroverheadd, caratd, caratpriced;
-    String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead,strcarat, resultMessage, strcaratpriced;
-
+    String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead,strcarat, resultMessage, strcaratpriced;    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diamond_cal);
 
         Button button = findViewById(R.id.button);
-
         button.setOnClickListener(this);
+
+        imageView = findViewById(R.id.imageView);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DiamondCal.this,chart.class);
+                startActivity(intent);
+
+            }
+
+        });
 
     }
 
@@ -29,7 +41,6 @@ public class DiamondCal extends AppCompatActivity implements View.OnClickListene
     }
 
     public void ComputeResult()
-
     {
         caratpriced = findViewById(R.id.caratpriced);
         Entermateriald = findViewById(R.id.Entermateriald);

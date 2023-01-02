@@ -2,20 +2,34 @@ package com.example.jewelrypricingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class GemCal extends AppCompatActivity implements View.OnClickListener{
 
     EditText Entermaterialg, Enterpriceg, purityg, Enterweightg, Enterhoursg, laborhoursg, Enteroverheadg, caratg, gemtypeg, caratpriceg;
     String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead,strcarat, resultMessage, strgemtypeg, strcaratpriceg;
-
+    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gem_cal);
+
+        imageView = findViewById(R.id.imageView);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(GemCal.this,chart.class);
+                startActivity(intent);
+
+            }
+
+        });
 
         Button button = findViewById(R.id.button);
 
