@@ -101,7 +101,7 @@ public class GemCal extends AppCompatActivity implements View.OnClickListener{
         double retail = wholesalep*2.5;
         double result = retail;
 
-        resultMessage ="\n\n\n"+"Category : Gemstone"+"\n"+"-------------------------------------------------------------"+
+        resultMessage ="\n\n\n"+"Category : Gemstone Ring"+"\n"+"-------------------------------------------------------------"+
                 "\n\n\n"+"Gem Type : "+strgemtypeg+"\n"+"Gemstone Carat: "+dcarat+"\n"+"Gemstone Price Today :"+strcaratpriceg+"\n"+"-------------------------------------------------------------"+"\n"+"Total Gemstone Price :"+carattotal+"\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
                 matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
                 +"-------------------------------------------------------------"+"\n"+
