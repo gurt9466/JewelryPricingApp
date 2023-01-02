@@ -17,11 +17,39 @@
             android:name=".GemCal"
             android:exported="false" />
         <activity
+            android:name=".GemCalB"
+            android:exported="false" />
+        <activity
+            android:name=".GemCalE"
+            android:exported="false" />
+        <activity
+            android:name=".GemCalN"
+            android:exported="false" />
+        <activity
             android:name=".DiamondCal"
+            android:exported="false" />
+        <activity
+            android:name=".DiamondCalB"
+            android:exported="false" />
+        <activity
+            android:name=".DiamondCalE"
+            android:exported="false" />
+        <activity
+            android:name=".DiamondCalN"
             android:exported="false" />
         <activity
             android:name=".NoGemCal"
             android:exported="false" />
+        <activity
+            android:name=".NoGemCalB"
+            android:exported="false" />
+        <activity
+            android:name=".NoGemCalE"
+            android:exported="false" />
+        <activity
+            android:name=".NoGemCalN"
+            android:exported="false" />
+
         <activity
             android:name=".SplashScreen"
             android:exported="true">

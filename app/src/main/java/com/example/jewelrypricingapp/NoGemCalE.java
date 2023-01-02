@@ -1,7 +1,5 @@
 package com.example.jewelrypricingapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,14 +7,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class NoGemCal extends AppCompatActivity implements View.OnClickListener {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class NoGemCalE extends AppCompatActivity implements View.OnClickListener {
     EditText Entermaterial1, Enterprice1, purity, Enterweight1, Enterhours1, laborhours, Enteroverhead1 ;
     String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead, resultMessage;
     ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_no_gem_cal);
+        setContentView(R.layout.activity_no_gem_cal_e);
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
 
@@ -25,7 +25,7 @@ public class NoGemCal extends AppCompatActivity implements View.OnClickListener 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoGemCal.this,chart.class);
+                Intent intent = new Intent(NoGemCalE.this,chart.class);
                 startActivity(intent);
 
             }
@@ -89,7 +89,7 @@ public class NoGemCal extends AppCompatActivity implements View.OnClickListener 
 
 
 
-        resultMessage ="\n\n\n"+"Category : No Stone Ring"+"\n"+"-------------------------------------------------------------"+
+        resultMessage ="\n\n\n"+"Category : No Stone Earrings"+"\n"+"-------------------------------------------------------------"+
                 "\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
                 matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
                 +"-------------------------------------------------------------"+"\n"+
@@ -101,19 +101,19 @@ public class NoGemCal extends AppCompatActivity implements View.OnClickListener 
                 "-------------------------------------------------------------"+"\n"+
                 "Retail Price :"+ retail+"\n"+"-------------------------------------------------------------"+"\n";
 
-    // Create Bundle instance, this will allow transfer of data from Activity to DialogFragment
-    Bundle args = new Bundle();
+        // Create Bundle instance, this will allow transfer of data from Activity to DialogFragment
+        Bundle args = new Bundle();
         args.putString("result", resultMessage);
 
-    // Create a dialog instance
-    DialogFragmentCustom dialogFragmentImp = new DialogFragmentCustom();
-    // Pass on dialog argument(args), the result
+        // Create a dialog instance
+        DialogFragmentCustom dialogFragmentImp = new DialogFragmentCustom();
+        // Pass on dialog argument(args), the result
         dialogFragmentImp.setArguments(args);
-    // Display the Dialog
+        // Display the Dialog
         dialogFragmentImp.show(getSupportFragmentManager(),"Display Result");
-    // Reset EditTexts
-    clearEditText();
-}
+        // Reset EditTexts
+        clearEditText();
+    }
     public void clearEditText(){
         Entermaterial1.getText().clear();
         Enterprice1.getText().clear();

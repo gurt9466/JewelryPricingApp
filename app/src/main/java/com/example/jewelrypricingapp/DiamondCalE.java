@@ -1,7 +1,5 @@
 package com.example.jewelrypricingapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,14 +7,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class DiamondCal extends AppCompatActivity implements View.OnClickListener{
+import androidx.appcompat.app.AppCompatActivity;
+
+public class DiamondCalE extends AppCompatActivity implements View.OnClickListener{
 
     EditText Entermateriald, Enterpriced, purityd, Enterweightd, Enterhoursd, laborhoursd, Enteroverheadd, caratd, caratpriced;
     String strmaterial, strprice, strpurity, strweight, strhours, strlaorhours, stroverhead,strcarat, resultMessage, strcaratpriced;    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diamond_cal);
+        setContentView(R.layout.activity_diamond_cal_e);
 
         Button button = findViewById(R.id.button);
         button.setOnClickListener(this);
@@ -26,7 +26,7 @@ public class DiamondCal extends AppCompatActivity implements View.OnClickListene
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DiamondCal.this,chart.class);
+                Intent intent = new Intent(DiamondCalE.this,chart.class);
                 startActivity(intent);
 
             }
@@ -96,7 +96,7 @@ public class DiamondCal extends AppCompatActivity implements View.OnClickListene
         double retail = wholesalep*2.5;
         double result = retail;
 
-        resultMessage ="\n\n\n"+"Category : Diamond Ring"+"\n"+"-------------------------------------------------------------"+
+        resultMessage ="\n\n\n"+"Category : Diamond Earrings"+"\n"+"-------------------------------------------------------------"+
                 "\n\n\n"+"Diamond Carat: "+dcarat+"\n"+"Diamond Price Today :"+strcaratpriced+"\n"+"-------------------------------------------------------------"+"\n"+"Total Diamond Price :"+carattotal+"\n\n\n"+"Material :"+strmaterial +"\n" + "Material Purity :"+
                 matpurity +"%"+"\n"+"Total Material Rate :"+ tmrate+"\n"
                 +"-------------------------------------------------------------"+"\n"+

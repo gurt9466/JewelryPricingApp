@@ -33,11 +33,11 @@ public class Elist extends AppCompatActivity {
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
             if(position==0){
-                startActivity(new Intent(Elist.this,NoGemCal.class));
+                startActivity(new Intent(Elist.this,NoGemCalE.class));
             }else if(position==1){
-                startActivity(new Intent(Elist.this,DiamondCal.class));
+                startActivity(new Intent(Elist.this,DiamondCalE.class));
             }else if(position==2){
-                startActivity(new Intent(Elist.this,GemCal.class));
+                startActivity(new Intent(Elist.this,GemCalE.class));
             }
         });
     }

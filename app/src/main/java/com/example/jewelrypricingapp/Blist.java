@@ -33,11 +33,11 @@ public class Blist extends AppCompatActivity {
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
             if(position==0){
-                startActivity(new Intent(Blist.this,NoGemCal.class));
+                startActivity(new Intent(Blist.this,NoGemCalB.class));
             }else if(position==1){
-                startActivity(new Intent(Blist.this,DiamondCal.class));
+                startActivity(new Intent(Blist.this,DiamondCalB.class));
             }else if(position==2){
-                startActivity(new Intent(Blist.this,GemCal.class));
+                startActivity(new Intent(Blist.this,GemCalB.class));
             }
         });
     }
