@@ -117,7 +117,7 @@
             android:fontFamily="monospace"
             android:gravity="center"
             android:padding="0sp"
-            android:text="@string/main_ring_bracelet"
+            android:text="  Ring          Bracelet"
             android:textAllCaps="true"
             android:textColor="#F1D166"
             android:textSize="20sp" />
@@ -189,7 +189,7 @@
             android:fontFamily="monospace"
             android:gravity="center"
             android:padding="0sp"
-            android:text="@string/main_neck_ear"
+            android:text="Neckalce        Earrings"
             android:textAllCaps="true"
             android:textColor="#F1D166"
             android:textSize="20sp" />
@@ -197,7 +197,7 @@
 
 
 
-    <TextView
+        <TextView
             android:id="@+id/footing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
