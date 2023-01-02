@@ -189,7 +189,7 @@
             android:fontFamily="monospace"
             android:gravity="center"
             android:padding="0sp"
-            android:text="Neckalce        Earrings"
+            android:text="Necklace        Earrings"
             android:textAllCaps="true"
             android:textColor="#F1D166"
             android:textSize="20sp" />
